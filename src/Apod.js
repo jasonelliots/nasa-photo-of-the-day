@@ -1,10 +1,15 @@
 import React from "react";
+import styled from 'styled-components'; 
+import { BigContainer } from './StyledComponents'; 
+
 
 function Apod(props) {
   const { apodData } = props;
 
   return (
-    <div className="apod">
+    <BigContainer>
+
+      
 
       <h2> {apodData.title}</h2>
 
@@ -14,7 +19,7 @@ function Apod(props) {
       
       <p> Image for {apodData.date}</p>
 
-    </div>
+    </BigContainer>
   );
 }
 
